@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState } from "react";
 
 function UserCard(props) {
     const {name, email, street, city} = props;
+    const [clicked, setClicked] = useState(false);
+
+      // Fungsi handler
+    function handleClick() {
+        setClicked(true);
+    }
 
    return (
 
@@ -14,6 +20,11 @@ function UserCard(props) {
         <span className="font-medium">Address:</span> 
         {street}, {city}
       </p>
+      <button className="bg-gray-600 text-white p-2 rounded-md"
+      onClick={() => setClicked(true)}
+      >
+        {clicked ? "Tombol sudah diklik" : "Silakan Klik"}
+      </button>
     </div>
   );
 }
