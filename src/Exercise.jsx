@@ -9,9 +9,23 @@ function Exercise() {
           User Cards
         </h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <UserCard />
-          <UserCard />
-          <UserCard />
+          <UserCard 
+          name="Humam"
+          email="humammanaf10@gmail.com"
+          street="Jl Abimanyu No 5"
+          city="Semarang Tengah"/>
+          
+          <UserCard 
+          name="Wajdi"
+          email="wajdimanaf10@gmail.com"
+          street="Jl Abimanyu No 4"
+          city="Semarang Utara"/>
+
+          <UserCard 
+          name="Manaf"
+          email="manafhumam10@gmail.com"
+          street="Jl Abimanyu No 7"
+          city="Semarang Timur"/>
         </div>
       </div>
     </>
