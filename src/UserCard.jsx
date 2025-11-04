@@ -24,7 +24,7 @@ function UserCard(props) {
           <span className="font-medium capitalize">{key}:</span> {value}
         </p>
       ))}
-
+      
       <button className={`${clicked ? "bg-green-600" : "bg-gray-700"} text-white p-2 rounded-md`}
       onClick={() => setClicked(true)}
       >
